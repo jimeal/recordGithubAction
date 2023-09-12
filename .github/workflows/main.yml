@@ -12,7 +12,7 @@ jobs:
         persist-credentials: false
     - name: 1. pip 업그레이드
       run: python -m pip install --upgrade pip
-    - name: 2. 환경설정
+    - name: 2. 환경설정1
       run: pip install -r requirements.txt
     - name: 3. 파이썬 파일 실행!!
       run: python 'test.py'
