@@ -19,10 +19,10 @@ jobs:
     - name: Commit files
       run: |
         git config --local user.email "dncl46@gmail.com"
-        git config --local user.name "jimeal[bot]"
+        git config --local user.name "jimeal"
         git add .
         git commit -m "Run crawler and update current data"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@main
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
